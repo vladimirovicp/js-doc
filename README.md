@@ -39,6 +39,24 @@ console.log((-0xff).toString(2)); // Выведет '-11111111'
 ```
 
 
+###  Math.max
+возвращает наибольшее число из списка
+```js
+alert( Math.max(3, 5, 1) ); // 5
+
+```
+```js
+let arr = [3, 5, 1];
+alert( Math.max(arr) ); // NaN
+```
+
+```js
+let arr = [3, 5, 1];
+alert( Math.max(...arr) ); // 5 (оператор "раскрывает" массив в список аргументов)
+```
+
+
+
 
 ## String
 
