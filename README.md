@@ -37,6 +37,17 @@ let str = "Яблоки круглые и яблоки сочные.";
 let newstr = str.replace(re, "апельсины");
 console.log(newstr); // апельсины круглые и апельсины сочные.
 ```
+```js
+
+let s1 = 'aabcc';
+s1 = s1.replace('a','');
+console.log(s1); // abcc
+s1 = s1.replace('a','1');
+console.log(s1); // 1bcc
+
+
+```
+
 
 
 ## Array
