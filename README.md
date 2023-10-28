@@ -1,5 +1,44 @@
 # js-doc
 
+## Методы примитивов
+## Number()
+Объект Number является объектом-обёрткой, позволяющей вам работать с числовыми значениями. Объект Number создаётся через конструктор Number().
+```js
+let num = Number("123"); // превращает строку в число
+
+new Number(value);
+var a = new Number('123'); // a === 123 is false
+var b = Number('123'); // b === 123 is true
+a instanceof Number; // is true
+b instanceof Number; // is false
+
+Number("123"); // 123
+Number(""); // 0
+Number("0x11"); // 17
+Number("0b11"); // 3
+Number("0o11"); // 9
+Number("foo"); // NaN
+Number("100a"); // NaN
+```
+
+## toString()
+Метод toString() возвращает строковое представление указанного объекта Number.
+```js
+var count = 10;
+
+console.log(count.toString()); // Выведет '10'
+console.log((17).toString()); // Выведет '17'
+
+var x = 6;
+
+console.log(x.toString(2)); // Выведет '110'
+console.log((254).toString(16)); // Выведет 'fe'
+
+console.log((-10).toString(2)); // Выведет '-1010'
+console.log((-0xff).toString(2)); // Выведет '-11111111'
+```
+
+
 
 ## String
 
@@ -13,6 +52,19 @@ alert( str.split('') ); // т,е,с,т
 ```
 
 ### slice
+Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки.
+
+```js
+let str1 = "Приближается утро.";
+let str2 = str1.slice(1, 8);
+console.log(str2); // ВЫВОД: риближа
+let str3 = str1.slice(4, -2);
+console.log(str3); // ВЫВОД: лижается утр
+let str4 = str1.slice(12);
+console.log(str4); // ВЫВОД:  утро.
+let str5 = str1.slice(30);
+console.log(str5); // ВЫВОД: ""
+```
 
 ### concat
 
